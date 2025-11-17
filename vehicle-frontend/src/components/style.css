@@ -1,0 +1,152 @@
+/* ===== Body & Container ===== */
+body {
+  background: linear-gradient(135deg, #1a1a1a, #2e2e2e);
+  font-family: "Poppins", sans-serif;
+  color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.vehicle-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: rgba(30, 30, 30, 0.7);
+  padding: 25px 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.vehicle-container h2 {
+  text-align: center;
+  color: #4cd137;
+  margin-bottom: 30px;
+}
+
+/* ===== Two Columns Layout ===== */
+.vehicle-columns {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.vehicle-column {
+  flex: 1;
+  min-width: 350px;
+}
+
+/* ===== Forms ===== */
+.vehicle-form {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 8px rgba(0, 255, 0, 0.05);
+}
+
+.vehicle-form h3 {
+  margin-bottom: 15px;
+  color: #74b9ff;
+}
+
+.vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.vehicle-grid.small {
+  grid-template-columns: 2fr 1fr;
+}
+
+.vehicle-grid input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.vehicle-btn-group {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ===== Buttons ===== */
+.vehicle-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.btn-add {
+  background: #4cd137;
+}
+
+.btn-update {
+  background: #00a8ff;
+}
+
+.btn-delete {
+  background: #e84118;
+}
+
+.btn-cancel {
+  background: #7f8fa6;
+}
+
+.vehicle-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* ===== Messages ===== */
+.vehicle-message {
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.vehicle-message.success {
+  background: rgba(46, 213, 115, 0.2);
+  color: #4cd137;
+}
+
+.vehicle-message.error {
+  background: rgba(232, 65, 24, 0.2);
+  color: #e84118;
+}
+
+/* ===== Table ===== */
+.vehicle-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.vehicle-table th,
+.vehicle-table td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.vehicle-table th {
+  color: #00a8ff;
+}
+
+/* ===== Vehicle Card ===== */
+.vehicle-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
